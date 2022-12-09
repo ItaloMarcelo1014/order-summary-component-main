@@ -1,0 +1,185 @@
+/*Nova obordagem Correção de todos os erros*/
+
+/*RESET CSS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background-color: #e0e8ff;
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    font-size:  16px;
+}
+
+:root{
+
+/*Primary*/
+
+--Ple-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+/*Neutral*/
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+button{
+    border: none;
+    color: #fff;
+}
+
+strong{
+    font-weight: 900;
+}
+
+.gray{
+    color: gray;
+}
+
+.info p {
+    color: gray;
+}
+
+/*card*/
+
+.card{
+    width: 327px;
+    height: 571px;
+    background-color: #fff;
+    margin: 75px 25px 25px 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/*banner-card*/
+
+.banner-card img {
+    border-radius: 15px 15px 0px 0;
+    width: 327px;
+}
+
+
+/*informacao do card*/
+
+.infomation .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+   text-align: center;
+}
+
+.infomation .info h1{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.infomation .box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+/*box*/
+
+.box {
+    margin-left: 25px;
+    background-color: var(--Very-pale-blue);
+    width: 271px;
+    height: 87px;
+}
+
+/*buttons and button colors*/
+.buttons-coluns{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+button{
+    width: 271px;
+    height: 50px;
+    margin-top: 18px;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+#blue{
+   margin-top: 30px;
+   background-color: var(--Bright-blue);
+   box-shadow: 0 8px 16px 0 rgba(48, 68, 185, 0.5);
+}
+
+#invsible{
+    background-color: transparent;
+    color: gray;
+}
+
+
+
+
+@media screen and (min-width: 1440px) {
+    body{
+        background-image: url(/images/pattern-background-desktop.svg) ;
+        background-repeat: no-repeat;
+        padding: 10px;
+    }
+
+    main{
+        padding: 25px;
+    }
+     
+    .card{
+        width: 452px;
+        height: 702px;
+        position: relative;
+        left: 450px;
+        top: 25px;
+    }
+
+    .banner-card img {
+        border-radius: 15px 15px 0px 0;
+        width: 452px;
+    }
+
+    .infomation .info h1{
+        font-size: 1.5em;
+        font-weight: 900;
+        margin: 10px;
+    }
+    .infomation .info p{
+        margin: 10px;
+    }
+
+    .box {
+        margin-left: 45px;
+        background-color: var(--Very-pale-blue);
+        width: 360px;
+        height: 90px;
+    }
+    
+    .buttons-coluns{
+      margin-top: 15px;
+     }
+
+    button{
+        width: 360px;
+    }
+}
